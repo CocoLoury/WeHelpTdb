@@ -12,6 +12,7 @@
       </div>
     </div>
   </body>
-  <script src="./script/timePerTaskP3.js"></script>
-  <script src="./script/nbStatusTasksP3.js"></script>
+  <script type="module" src="./script/request.js"></script>
+  <!-- <script src="./script/timePerTaskP3.js"></script> -->
+  <!-- <script src="./script/nbStatusTasksP3.js"></script> -->
 </html>

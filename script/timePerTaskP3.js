@@ -2,20 +2,8 @@
 var taches=[]
 var temps=[]
 
-// Requêtes
-var request = new XMLHttpRequest();
-
-request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true');
-
-request.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R');
-request.setRequestHeader('Content-Type', 'application/json');
-
-request.onload = function () {
-    var data = JSON.parse(this.response)
-    var tasks = data.tasks
-    var size = tasks.length
-    if (request.status >= 200 && request.status < 400) {
-    for (i=0; i<size;i++){
+export default function timePerTask(tasks, size) {
+    for (let i=0; i<size;i++){
         taches.push(tasks[i].name)
         temps.push(convertMS(tasks[i].time_spent))
     }
@@ -36,17 +24,14 @@ request.onload = function () {
                 responsive: true,
                 title: {
                     display: true,
-                    text:    "Chart.js Time Scale"
+                    text: "Chart.js Time Scale"
                 },
             }
         },
     });
-    } else {
-    console.log('error')
-    }
 }
-request.send();
 
 function convertMS(milliseconds) {
+    var time
     return time = Math.floor(milliseconds / 1000 / 60 / 60);
 }
