@@ -8,7 +8,9 @@ var res = []
 
 export default function nbStatusTasks(tasks, size) {
     for (let i=0; i<size;i++){
-    stat.push(tasks[i].status.status)
+        if(tasks[i].parent == null) {
+            stat.push(tasks[i].status.status)
+        }
     }
     for (let j=0; j<stat.length;j++) {
     if(stat[j] == "done") {
@@ -42,19 +44,15 @@ export default function nbStatusTasks(tasks, size) {
             datasets: [{
                 data: res,
                 backgroundColor: [
-                    "#FF6384",
-                    "#4BC0C0",
-                    "#FFCE56"
+                    "#06D6A0",
+                    "#073B4C",
+                    "#FFD166",
+                    "#8D99AE"
                 ],
                 label: 'My dataset'
             }],
         },
         options: {
-            responsive: true,
-            title: {
-                display: true,
-                text: "Status des tâches"
-            },
         }
     });
 }

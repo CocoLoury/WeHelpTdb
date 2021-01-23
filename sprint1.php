@@ -16,8 +16,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.php">P3 cadrage</a>
-            <a class="nav-link" href="sprint1.php">Sprint 1</a>
+            <a class="nav-link" aria-current="page" href="index.php">P3 cadrage</a>
+            <a class="nav-link active" href="sprint1.php">Sprint 1</a>
             <a class="nav-link" href="sprint2.php">Sprint 2</a>
             <a class="nav-link" href="sprint3.php">Sprint 3</a>
             <a class="nav-link" href="sprint4.php">Sprint 4</a>
@@ -48,6 +48,6 @@
       </div>
     </div>
   </body>
-  <script type="module" src="./script/request.js"></script>
+  <script type="module" src="./script/requestSP1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </html>
