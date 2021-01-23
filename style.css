@@ -1,0 +1,26 @@
+body {
+    background-color: #e5e5e5 !important;
+}
+.navbar {
+    background-color: #2B2B2B !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+a.nav-link.active {
+    color: #076BE6 !important;
+}
+
+.nav-link:hover {
+    color: #07B8E6 !important;
+}
+
+.card-header {
+    background-color: #EE771B !important;
+}

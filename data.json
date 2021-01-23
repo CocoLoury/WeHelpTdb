@@ -1,0 +1,71 @@
+{
+    "burndownChart" :
+    {
+        "sprint1" :
+        {
+            "totalSprintEstimate" : 300,
+            "estimation" : [
+            {
+                "pcEstime" : 290
+            },
+            {
+                "pcEstime" : 275
+            },
+            {
+                "pcEstime" : 250
+            },
+            {
+                "pcEstime" : 100
+            },
+            {
+                "pcEstime" : 110
+            },
+            {
+                "pcEstime" : 90
+            },
+            {
+                "pcEstime" : 50
+            },
+            {
+                "pcEstime" : 25
+            },
+            {
+                "pcEstime" : 10
+            },
+            {
+                "pcEstime" : 0
+            }],
+            "reel" : [
+            {
+                "pcReel" : 280
+            },
+            {
+                "pcReel" : 275
+            },
+            {
+                "pcReel" : 250
+            },
+            {
+                "pcReel" : 100
+            },
+            {
+                "pcReel" : 60
+            },
+            {
+                "pcReel" : 90
+            },
+            {
+                "pcReel" : 50
+            },
+            {
+                "pcReel" : 25
+            },
+            {
+                "pcReel" : 10
+            },
+            {
+                "pcReel" : 0
+            }]
+        }
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src=".\node_modules\chart.js\dist\Chart.min.js"></script>
+    <link href="./style.css" rel="stylesheet">
     <title>Dashboard</title>
   </head>
   <body>
@@ -26,23 +27,38 @@
       </div>
     </nav>
     <br/>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card">
-            <h5 class="card-header">Temps par tâches</h5>
-            <div class="card-body">
-              <canvas id="timePerTask" width="200px" height="100px"></canvas>
-            </div>
+    <div class="container-fluid" style="display: flex; flex-wrap:wrap">
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="card">
+          <h5 class="card-header">Temps par tâches</h5>
+          <div class="card-body">
+            <canvas id="timePerTask" width="200px" height="100px"></canvas>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card">
-              <h5 class="card-header">Nombre de tâches par status</h5>
-              <div class="card-body">
-                <canvas id="nbStatusTasks" width="200px" height="100px"></canvas>
-              </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Progression des tâches</h5>
+            <div class="card-body">
+              <canvas id="progressTasks" width="200px" height="100px"></canvas>
             </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Nombre de tâches par status</h5>
+            <div class="card-body">
+              <canvas id="nbStatusTasks" width="100px" height="100px"></canvas>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-header" style="display: flex; align-items:center;">
+            <h5 class="col-9">Burndown Chart</h5>
+          </div>
+          <div class="card-body">
+            <canvas id="burndowChart" width="200px" height="100px"></canvas>
           </div>
         </div>
       </div>

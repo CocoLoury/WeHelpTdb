@@ -1,5 +1,7 @@
 import nbStatusTasks from "./nbStatusTasksP3.js";
 import timePerTask from "./timePerTaskP3.js";
+import burndownChart from "./burndownChart.js";
+import progressTasks from "./progressTasks.js";
 
 // Requêtes
 var request = new XMLHttpRequest();
@@ -16,6 +18,8 @@ request.onload = function () {
         var size = tasks.length
         timePerTask(tasks, size)
         nbStatusTasks(tasks, size)
+        burndownChart()
+        progressTasks(tasks, size)
     } else {
         console.log('error')
     }
