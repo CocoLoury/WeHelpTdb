@@ -9,7 +9,7 @@ console.log(code)
 connect.open('GET', 'https://app.clickup.com/api/v2/oauth/token&'+code+'&client_id=72YEPZMRZ3EJI0CRC3QKCJIJJJZAFW1E&client_secret=H8CG1W57RSXRL11P2ZNKTJLZSUUIMCDSEME9XILDFCBYMFKTS6NJFCNJV8SFMRKN');
 connect.send()
 console.log(this.response)
-auth = this.response.access_token
+var auth = this.response.access_token
 
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
