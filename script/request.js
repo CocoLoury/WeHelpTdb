@@ -4,7 +4,7 @@ import timePerTask from "./timePerTaskP3.js";
 // Requêtes
 var connect = new XMLHttpRequest();
 var request = new XMLHttpRequest();
-code = window.location.search
+var code = window.location.search
 console.log(code)
 connect.open('GET', 'https://app.clickup.com/api/v2/oauth/token&'+code+'&client_id=72YEPZMRZ3EJI0CRC3QKCJIJJJZAFW1E&client_secret=H8CG1W57RSXRL11P2ZNKTJLZSUUIMCDSEME9XILDFCBYMFKTS6NJFCNJV8SFMRKN');
 
