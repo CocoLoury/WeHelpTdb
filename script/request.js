@@ -12,7 +12,7 @@ console.log(connect)
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
 request.setRequestHeader('Authorization',
-    connect.open('GET', 'https://app.clickup.com/api/v2/oauth/token&'+code+'client_id=72YEPZMRZ3EJI0CRC3QKCJIJJJZAFW1E&client_secret=H8CG1W57RSXRL11P2ZNKTJLZSUUIMCDSEME9XILDFCBYMFKTS6NJFCNJV8SFMRKN')
+    connect.send('GET', 'https://app.clickup.com/api/v2/oauth/token&'+code+'client_id=72YEPZMRZ3EJI0CRC3QKCJIJJJZAFW1E&client_secret=H8CG1W57RSXRL11P2ZNKTJLZSUUIMCDSEME9XILDFCBYMFKTS6NJFCNJV8SFMRKN')
 );
 request.setRequestHeader('X-Api-Key', '72YEPZMRZ3EJI0CRC3QKCJIJJJZAFW1E');
 request.setRequestHeader('Content-Type', 'application/json');
