@@ -6,8 +6,6 @@ var connect = new XMLHttpRequest();
 var request = new XMLHttpRequest();
 var code = window.location.search
 console.log(code)
-connect.send()
-console.log(connect)
 
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
