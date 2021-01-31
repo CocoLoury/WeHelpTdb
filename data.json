@@ -67,5 +67,79 @@
                 "pcReel" : 0
             }]
         }
-    }
+    },
+    "equipe": [
+        {
+            "id": 6833952,
+            "username": "Alexandre Foures",
+            "poste": "Développeur full stack",
+            "cout": 37.50
+        },
+        {
+            "id": 4594745,
+            "username": "Armand Arzoumanian",
+            "poste": "Directeur de projet",
+            "cout": 62.50
+        },
+        {
+            "id": 6615132,
+            "username": "Quentin Duboux",
+            "poste": "Product Owner",
+            "cout": 50
+        },
+        {
+            "id": 4594746,
+            "username": "Colin Cinquino",
+            "poste": "Développeur Front",
+            "cout": 37.50
+        },
+        {
+            "id": 6615133,
+            "username": "Souhail Majoub",
+            "poste": "Lead développeur",
+            "cout": 50
+        },
+        {
+            "id": 6833951,
+            "username": "Julien Ratahiry",
+            "poste": "Git master / Développeur back",
+            "cout": 37.50
+        },
+        {
+            "id": 4596253,
+            "username": "Steven Fadier",
+            "poste": "Développeur front / Designer",
+            "cout": 37.50
+        },
+        {
+            "id": 4594734,
+            "username": "Colin Loury",
+            "poste": "Lead Support",
+            "cout": 50
+        },
+        {
+            "id": 2679874,
+            "username": "Alexandre Chapelle",
+            "poste": "Développeur back",
+            "cout": 37.50
+        },
+        {
+            "id": 6833946,
+            "username": "Myriam Latti",
+            "poste": "Développeuse back",
+            "cout": 37.50
+        },
+        {
+            "id": 6833949,
+            "username": "Antoine Casta",
+            "poste": "Lead design / Développeur front",
+            "cout": 50
+        },
+        {
+            "id": 6833945,
+            "username": "Khadidja Larabi",
+            "poste": "Scrum master / Développeuse back",
+            "cout": 50
+        }
+    ]
 }

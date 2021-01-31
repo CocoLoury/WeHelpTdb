@@ -1,5 +1,6 @@
 import nbStatusTasks from "./nbStatusTasksP3.js";
 import timePerTask from "./timePerTaskP3.js";
+import requestTasks from "./coutTache.js";
 
 // Requêtes
 var request = new XMLHttpRequest();
@@ -16,6 +17,7 @@ request.onload = function () {
         var size = tasks.length
         timePerTask(tasks, size)
         nbStatusTasks(tasks, size)
+        requestTasks(tasks, size)
     } else {
         console.log('error')
     }

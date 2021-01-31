@@ -1,8 +1,8 @@
 body {
-    background-color: #e5e5e5 !important;
+    background-color: #2B2B2B !important;
 }
 .navbar {
-    background-color: #2B2B2B !important;
+    background-color: #414141 !important;
 }
 
 .navbar-brand {
@@ -13,14 +13,29 @@ body {
     color: white !important;
 }
 
+.card-header {
+    background-color: #414141 !important;
+    color: white;
+}
+
+.card-body {
+    background-color: #414141 !important;
+    border-color: #414141;
+}
+
+.card {
+    border: inherit;
+    margin: 0.5rem;
+}
+
+p {
+    color: white;
+}
+
 a.nav-link.active {
-    color: #076BE6 !important;
+    color: #EE771B !important;
 }
 
 .nav-link:hover {
-    color: #07B8E6 !important;
-}
-
-.card-header {
-    background-color: #EE771B !important;
-}
+    color: #EE771B !important;
+} 

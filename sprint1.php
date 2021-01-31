@@ -22,6 +22,7 @@
             <a class="nav-link" href="sprint2.php">Sprint 2</a>
             <a class="nav-link" href="sprint3.php">Sprint 3</a>
             <a class="nav-link" href="sprint4.php">Sprint 4</a>
+            <a class="nav-link" href="equipe.php">Equipe</a>
           </div>
         </div>
       </div>
@@ -29,7 +30,7 @@
     <br/>
     <div class="container-fluid" style="display: flex; flex-wrap:wrap">
       <div class="col-lg-5 col-md-6 col-sm-12">
-        <div class="card">
+        <div class="card" style="margin: 0.5rem;">
           <h5 class="card-header">Temps par tâches</h5>
           <div class="card-body">
             <canvas id="timePerTask" width="200px" height="100px"></canvas>
@@ -37,7 +38,7 @@
         </div>
       </div>
       <div class="col-lg-5 col-md-6 col-sm-12">
-        <div class="card">
+        <div class="card" style="margin: 0.5rem;">
             <h5 class="card-header">Progression des tâches</h5>
             <div class="card-body">
               <canvas id="progressTasks" width="200px" height="100px"></canvas>
@@ -45,7 +46,7 @@
         </div>
       </div>
       <div class="col-lg-2 col-md-4 col-sm-12">
-        <div class="card">
+        <div class="card" style="margin: 0.5rem;">
             <h5 class="card-header">Nombre de tâches par status</h5>
             <div class="card-body">
               <canvas id="nbStatusTasks" width="100px" height="100px"></canvas>
@@ -53,12 +54,22 @@
         </div>
       </div>
       <div class="col-lg-5 col-md-6 col-sm-12">
-        <div class="card">
+        <div class="card" style="margin: 0.5rem;">
           <div class="card-header" style="display: flex; align-items:center;">
             <h5 class="col-9">Burndown Chart</h5>
           </div>
           <div class="card-body">
             <canvas id="burndowChart" width="200px" height="100px"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="card" style="margin: 0.5rem;">
+          <div class="card-header" style="display: flex; align-items:center;">
+            <h5 class="col-9">Coût par tâches</h5>
+          </div>
+          <div class="card-body">
+            <canvas id="coutTache" width="200px" height="100px"></canvas>
           </div>
         </div>
       </div>

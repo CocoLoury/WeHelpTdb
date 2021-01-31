@@ -66,7 +66,7 @@ export default async function burndownChart() {
     });
 }
 
-function getData () {
+async function getData () {
     return fetch('./data.json')
             .then(result => result.json())
 }
