@@ -24,7 +24,7 @@ export default function requestTasks(tasks, size) {
         };
         requestTime.send()
     }
-    coutTache()
+    setTimeout(() =>  { coutTache() }, 1000)
 }
 
 function result(res, enCours) {
