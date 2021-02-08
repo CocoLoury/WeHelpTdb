@@ -29,4 +29,5 @@ var_dump($response);
 <script>
     var entier = <?= $response ?>;
     console.log(entier['access_token']);
+    localStorage.setItem('access_token', entier['access_token']);
 </script>
