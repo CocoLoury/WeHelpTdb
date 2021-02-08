@@ -9,7 +9,6 @@ curl_setopt($ch, CURLOPT_POST, TRUE);
 
 $response = curl_exec($ch);
 curl_close($ch);
-$result=$response("access_token");
 var_dump($response);
 ?>
 <!doctype html>
@@ -29,6 +28,10 @@ var_dump($response);
 
 <script>
     var coucou = <?= $response['access_token'] ?>
+    var truc = <?= $response['access_token'] ?>
+    var entier = <?= $response ?>
     console.log(coucou)
-    localStorage.setItem("access_token", <?= $response['access_token'] ?>);
+    console.log(truc)
+    console.log(entier)
+    //localStorage.setItem("access_token", <?= $response['access_token'] ?>);
 </script>
