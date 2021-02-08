@@ -6,6 +6,7 @@ import requestTasks from "./coutTache.js";
 var request = new XMLHttpRequest();
 
 if(localStorage.getItem('access_token')) {
+    console.log('Je passe : ' + localStorage.getItem('access_token'));
     request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
     request.setRequestHeader('Authorization', localStorage.getItem('access_token'));
