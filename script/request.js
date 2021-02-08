@@ -6,6 +6,7 @@ import requestTasks from "./coutTache.js";
 var request = new XMLHttpRequest();
 var authorization = localStorage.getItem('access_token');
 
+setTimeout(() =>  {
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
 request.setRequestHeader('Authorization', authorization);
@@ -24,3 +25,4 @@ request.onload = function () {
     }
 };
 request.send();
+},1000);
