@@ -27,10 +27,10 @@ var_dump($response);
 </html>
 
 <script>
-    var coucou = <?= $response['access_token'] ?>
-    var truc = <?= $response['access_token'] ?>
-    var entier = <?= $response ?>
-    console.log(coucou)
-    console.log(truc)
-    console.log(entier)
+    var coucou = <?= $response['access_token'] ?>;
+    var truc = <?= $response['access_token'] ?>;
+    var entier = <?= $response ?>;
+    console.log(coucou);
+    console.log(truc);
+    console.log(entier);
 </script>
