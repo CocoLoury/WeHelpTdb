@@ -28,5 +28,5 @@ var_dump($response);
 
 <script>
     var entier = <?= $response ?>;
-    console.log(entier);
+    console.log(entier['access_token']);
 </script>
