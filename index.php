@@ -1,7 +1,7 @@
 <?php
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://api.clickup.com/api/v2/oauth/token?client_id=UISTJI1IMFB9G7V4COHU8YG1NFAOAOOZ&client_secret=80JIR46IFRDGVT8BD25XKW9P3EU0SFJJZYCRFH6EFE7RW70C9K9BNXEKU4W4B0RX&code=".$_GET['code']."&redirect_uri=https://wehelptdb.herokuapp.com/p3.php");
+curl_setopt($ch, CURLOPT_URL, "https://api.clickup.com/api/v2/oauth/token?client_id=UISTJI1IMFB9G7V4COHU8YG1NFAOAOOZ&client_secret=80JIR46IFRDGVT8BD25XKW9P3EU0SFJJZYCRFH6EFE7RW70C9K9BNXEKU4W4B0RX&code=".$_GET['code']);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -29,4 +29,6 @@ var_dump($response);
 <script>
     var entier = <?= $response ?>;
     localStorage.setItem('access_token', entier['access_token']);
+    var url= "https://wehelptdb.herokuapp.com/p3.php"; 
+    window.location = url; 
 </script>
