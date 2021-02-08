@@ -9,7 +9,7 @@ var request = new XMLHttpRequest();
 
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
-request.setRequestHeader('Authorization', "'"+token+"'");
+request.setRequestHeader('Authorization', '4594734_8fc530bd97ac28a7769c4b8d027c8a36fd0db66f');
 request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
