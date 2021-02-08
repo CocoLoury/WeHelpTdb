@@ -16,7 +16,7 @@ request.addEventListener("readystatechange", function() {
 
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
-request.setRequestHeader('Authorization', '' + token + '');
+request.setRequestHeader('Authorization', token);
 request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
@@ -32,3 +32,17 @@ request.onload = function () {
     }
 };
 request.send();
+
+var myHeaders = new Headers();
+myHeaders.append("Authorization", token);
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
