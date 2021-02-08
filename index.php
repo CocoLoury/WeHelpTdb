@@ -33,5 +33,4 @@ var_dump($response);
     console.log(coucou)
     console.log(truc)
     console.log(entier)
-    //localStorage.setItem("access_token", <?= $response['access_token'] ?>);
 </script>
