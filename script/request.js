@@ -4,12 +4,10 @@ import requestTasks from "./coutTache.js";
 
 // Requêtes
 var request = new XMLHttpRequest();
-var authorization = localStorage.getItem('access_token');
 
-setTimeout(() =>  {
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
-request.setRequestHeader('Authorization', authorization);
+request.setRequestHeader('Authorization', await localStorage.getItem('access_token'));
 request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
@@ -25,4 +23,3 @@ request.onload = function () {
     }
 };
 request.send();
-},1000);
