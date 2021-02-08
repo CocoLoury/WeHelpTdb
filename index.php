@@ -27,5 +27,7 @@ var_dump($response);
 </html>
 
 <script>
-    localStorage.setItem(<?= $response ?>);
+    var coucou = <?= $response['access_token'] ?>
+    console.log(coucou)
+    localStorage.setItem("access_token", <?= $response['access_token'] ?>);
 </script>
