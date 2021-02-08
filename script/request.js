@@ -8,6 +8,12 @@ const token = localStorage.getItem('access_token')
 var request = new XMLHttpRequest();
 request.withCredentials = true;
 
+request.addEventListener("readystatechange", function() {
+    if(this.readyState === 4) {
+      console.log(this.responseText);
+    }
+  });
+
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
 request.setRequestHeader('Authorization', '4594734_8fc530bd97ac28a7769c4b8d027c8a36fd0db66f');
