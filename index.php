@@ -9,6 +9,7 @@ curl_setopt($ch, CURLOPT_POST, TRUE);
 
 $response = curl_exec($ch);
 curl_close($ch);
+$result=$response("access_token")
 var_dump($response);
 ?>
 <!doctype html>
