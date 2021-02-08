@@ -27,7 +27,5 @@ var_dump($response);
 </html>
 
 <script>
-    var coucou = <?= $response; ?>;
-    console.log(coucou);
-    localStorage.setItem(<?php $response ?>);
+    localStorage.setItem(<?= $response ?>);
 </script>
