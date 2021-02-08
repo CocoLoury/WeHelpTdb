@@ -4,13 +4,12 @@ import requestTasks from "./coutTache.js";
 
 // Requêtes
 const token = localStorage.getItem('access_token');
-const { accessToken, tokenType } = JSON.parse(token);
 
 var request = new XMLHttpRequest();
 
 request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
 
-request.setRequestHeader('Authorization', tokenType + accessToken);
+request.setRequestHeader('Authorization', token);
 request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
