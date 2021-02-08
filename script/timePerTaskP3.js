@@ -51,5 +51,5 @@ export default function timePerTask(tasks, size) {
 
 function convertMS(milliseconds) {
     var time
-    return time = Math.floor(milliseconds / 1000 / 60 / 60);
+    return time = Math.round((milliseconds / 1000 / 60 / 60)*100)/100;
 }

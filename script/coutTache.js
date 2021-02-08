@@ -86,7 +86,7 @@ function result(res, enCours) {
 
 function convertMS(milliseconds) { //Conversion milliseconde en H
     var time
-    return time = Math.floor(milliseconds / 1000 / 60 / 60);
+    return time = Math.round((milliseconds / 1000 / 60 / 60)*100)/100;
 }
 
 function coutTache() { //Affichage du graphique
