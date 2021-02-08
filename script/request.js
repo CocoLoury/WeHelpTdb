@@ -6,16 +6,10 @@ const token = localStorage.getItem('access_token')
 
 // Requêtes
 var request = new XMLHttpRequest();
+var url = 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true'
+
+request.open('GET', url, true);
 request.withCredentials = true;
-
-request.addEventListener("readystatechange", function() {
-    if(this.readyState === 4) {
-      console.log(this.responseText);
-    }
-  });
-
-request.open('GET', 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true');
-
 request.setRequestHeader('Authorization', token);
 request.setRequestHeader('Content-Type', 'application/json');
 
@@ -32,17 +26,3 @@ request.onload = function () {
     }
 };
 request.send();
-
-var myHeaders = new Headers();
-myHeaders.append("Authorization", token);
-
-var requestOptions = {
-  method: 'GET',
-  headers: myHeaders,
-  redirect: 'follow'
-};
-
-fetch("https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
