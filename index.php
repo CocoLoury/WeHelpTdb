@@ -27,5 +27,6 @@ var_dump($response);
 </html>
 
 <script>
+    console.log(<?php $response ?>)
     localStorage.setItem(<?php $response ?>);
 </script>
