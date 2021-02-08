@@ -10,6 +10,7 @@ curl_setopt($ch, CURLOPT_POST, TRUE);
 
 $response = curl_exec($ch);
 curl_close($ch);
+$_SESSION['token'] = $response
 ?>
 <!doctype html>
 <html lang="fr">
