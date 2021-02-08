@@ -6,7 +6,7 @@ const token = localStorage.getItem('access_token')
 
 // Requêtes
 var request = new XMLHttpRequest();
-var url = 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true'
+var url = 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true&redirect_uri=https://wehelptdb.herokuapp.com/'
 
 request.open('GET', url, true);
 request.withCredentials = true;
