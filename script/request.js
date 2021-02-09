@@ -10,8 +10,7 @@ var url = 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true
 
 request.open('GET', url, true);
 request.withCredentials = true;
-request.setRequestHeader('Authorization', token);
-request.setRequestHeader('Access-Control-Allow-Origin', '*');
+request.setRequestHeader('Authorization', 'bearer' + token);
 request.setRequestHeader('Content-Type', 'application/json');
 request.send();
 
