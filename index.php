@@ -1,6 +1,6 @@
 <?php
 $ch = curl_init();
-
+session_start();
 curl_setopt($ch, CURLOPT_URL, "https://api.clickup.com/api/v2/oauth/token?client_id=UISTJI1IMFB9G7V4COHU8YG1NFAOAOOZ&client_secret=80JIR46IFRDGVT8BD25XKW9P3EU0SFJJZYCRFH6EFE7RW70C9K9BNXEKU4W4B0RX&code=".$_GET['code']);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
@@ -9,6 +9,7 @@ curl_setopt($ch, CURLOPT_POST, TRUE);
 
 $response = curl_exec($ch);
 curl_close($ch);
+$_SESSION["access_token"]=$response;
 ?>
 <!doctype html>
 <html lang="fr">
