@@ -6,8 +6,7 @@ const token = localStorage.getItem('access_token')
 
 // Requêtes
 var request = new XMLHttpRequest();
-var url = 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true&access_token='+token
-
+var url = 'https://api.clickup.com/api/v2/list/40447037/task?include_closed=true&subtasks=true'
 request.open('GET', url, true);
 request.withCredentials = true;
 //request.setRequestHeader('Authorization', token);
