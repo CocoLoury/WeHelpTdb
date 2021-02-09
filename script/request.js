@@ -12,6 +12,7 @@ request.open('GET', url, true);
 request.withCredentials = true;
 request.setRequestHeader('Authorization', token);
 request.setRequestHeader('Content-Type', 'application/json');
+request.send();
 
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
@@ -25,4 +26,3 @@ request.onload = function () {
         console.log('error')
     }
 };
-request.send();

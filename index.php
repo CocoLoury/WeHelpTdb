@@ -28,6 +28,6 @@ curl_close($ch);
 <script>
     var entier = <?= $response ?>;
     localStorage.setItem('access_token', entier['access_token']);
-    // var url= "https://wehelptdb.herokuapp.com/p3.php"; 
-    // window.location = url; 
+    var url= "https://wehelptdb.herokuapp.com/p3.php"; 
+    window.location = url; 
 </script>
