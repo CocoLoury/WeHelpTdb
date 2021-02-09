@@ -29,6 +29,6 @@ $_SESSION["access_token"]=$response;
 <script>
     var entier = <?= $response ?>;
     localStorage.setItem('access_token', entier['access_token']);
-    var url= "https://wehelptdb.herokuapp.com/p3.php"; 
+    var url= "https://wehelptdb.herokuapp.com/cadrage.php"; 
     window.location = url; 
 </script>

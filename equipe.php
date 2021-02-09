@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.php">P3 cadrage</a>
+            <a class="nav-link" aria-current="page" href="cadrage.php">P3 cadrage</a>
             <a class="nav-link" href="sprint1.php">Sprint 1</a>
             <a class="nav-link" href="sprint2.php">Sprint 2</a>
             <a class="nav-link" href="sprint3.php">Sprint 3</a>
