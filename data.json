@@ -141,5 +141,29 @@
             "poste": "Scrum master / Développeuse back",
             "cout": 50
         }
-    ]
+    ],
+    "vuedensemble" : {
+        "vueSprint" : [
+            {
+                "id" : 1,
+                "sprint" : 1309.25,
+                "avancement": 10
+            },
+            {
+                "id" : 2,
+                "sprint" : 0,
+                "avancement": 0
+            },
+            {
+                "id" : 3,
+                "sprint" : 0,
+                "avancement": 0
+            },
+            {
+                "id" : 4,
+                "sprint" : 0,
+                "avancement": 0
+            }
+        ]
+    }
 }

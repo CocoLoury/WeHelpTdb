@@ -37,15 +37,15 @@ export default function progressTasks(tasks, size) {
     color: '#aaa',
     // This has to be the same size as the maximum width to
     // prevent clipping
-    strokeWidth: 5,
-    trailWidth: 5,
+    strokeWidth: 6,
+    trailWidth: 6,
     easing: 'easeInOut',
     duration: 1400,
     text: {
       autoStyleContainer: false
     },
     from: { color: '#EE771B', width: 6 },
-    to: { color: '#333', width: 4 },
+    to: { color: '#333', width: 6 },
     // Set default step function for all animate calls
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
