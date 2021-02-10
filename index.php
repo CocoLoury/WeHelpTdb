@@ -29,6 +29,7 @@ $_SESSION["access_token"]=$response;
 <script>
     var entier = <?= $response ?>;
     localStorage.setItem('access_token', entier['access_token']);
-    var url= "https://wehelptdb.herokuapp.com/cadrage.php"; 
+    var url= "https://wehelptdb.herokuapp.com/cadrage.php"; //heroku
+    //var url= "http://loury.alwaysdata.net/cadrage.php"; //AlwaysData
     window.location = url; 
 </script>

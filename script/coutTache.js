@@ -24,7 +24,9 @@ export default function requestTasks(tasks, size) {
         };
         requestTime.send()
     }
-    setTimeout(() =>  { coutTache() }, 1000)
+    setTimeout(() =>  {
+        coutTache() 
+    }, 1000)
 }
 
 function result(res, enCours) {
@@ -90,6 +92,11 @@ function convertMS(milliseconds) { //Conversion milliseconde en H
 }
 
 function coutTache() { //Affichage du graphique
+    var res = 0
+    for(let i = 0; i < prix.length; i++) {
+        res += prix[i];
+    }
+    document.getElementById("prixSprint").innerHTML = res + '€'; 
     //Charts
     var ctx = document.getElementById('coutTache').getContext('2d');
     var mixedChart = new Chart(ctx, {

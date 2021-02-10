@@ -26,6 +26,7 @@ body {
 .card {
     border: inherit;
     margin: 0.5rem;
+    background-color: inherit;
 }
 
 p {
@@ -39,3 +40,25 @@ a.nav-link.active {
 .nav-link:hover {
     color: #EE771B !important;
 } 
+
+/* Vue d'ensemble */
+.prixSprint {
+    width: 20%;
+
+}
+
+.ecart {
+    flex: inherit;
+}
+
+.ecart p {
+    margin-bottom: 1px;
+}
+
+.ecart .prix {
+    font-size: 25px;
+}
+
+.ecart .sprint {
+    font-size: small;
+}
