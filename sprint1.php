@@ -30,6 +30,10 @@
       </div>
     </nav>
     <br/>
+    <div class="alert alert-warning alert-dismissible fade show" id="alert" role="alert" style="display: none;">
+        Trop de requêtes effectuées, données érronées, veuillez attendre <strong id="counter">1 minute</strong> et recharger la page
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <div class="container-fluid" style="display: flex; flex-wrap:wrap">
       <div class="col-lg-5 col-md-6 col-sm-12">
         <div class="card" style="margin: 0.5rem;">

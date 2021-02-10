@@ -5,6 +5,8 @@ import progressTasks from "./progressTasks.js";
 import coutTache from "./coutTache.js"
 
 const token = localStorage.getItem('access_token')
+var seconds=60;
+var timer;
 
 // Requêtes
 var request = new XMLHttpRequest();
@@ -17,6 +19,7 @@ request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
+        //document.getElementById("alert").style.display = "none";
         var data = JSON.parse(this.response)
         var tasks = data.tasks
         var size = tasks.length
@@ -26,7 +29,24 @@ request.onload = function () {
         progressTasks(tasks, size)
         coutTache(tasks, size)
     } else {
+        document.getElementById("alert").style.display = "block";
+        if(!timer) {
+            timer = window.setInterval(function() {
+                counter();
+            }, 1000);
+        }
         console.log('error')
     }
 };
 request.send();
+
+function counter() {
+    if(seconds < 60) {
+        document.getElementById("counter").innerHTML = seconds + " secondes";
+    }
+    if (seconds > 0) {
+        seconds--;
+    } else {
+        clearInterval(timer);
+    }
+}

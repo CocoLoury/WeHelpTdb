@@ -2,6 +2,9 @@
 var prix = []
 var taches = []
 var idParent = []
+var seconds=60;
+var timer;
+const token = localStorage.getItem('access_token')
 
 export default function requestTasks(tasks, size) {
     var enCours
@@ -15,9 +18,18 @@ export default function requestTasks(tasks, size) {
     for(let i = 0; i < size; i++) {
         var requestTime = new XMLHttpRequest();
         requestTime.open('GET', 'https://api.clickup.com/api/v2/task/'+tasks[i].id+'/time/?custom_task_ids=&team_id=2644132');
-        requestTime.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R');
+        requestTime.setRequestHeader('Authorization', token); // Serveur
+        //requestTime.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); // Local
         requestTime.setRequestHeader('Content-Type', 'application/json');
         requestTime.onload = function() {
+            if (requestTime.status == 429) {
+                document.getElementById("alert").style.display = "block";
+                if(!timer) {
+                    timer = window.setInterval(function() {
+                        counter();
+                    }, 1000);
+                }
+            }
             var res = JSON.parse(this.response)
             enCours = tasks[i]
             result(res, enCours)
@@ -113,4 +125,15 @@ function coutTache() { //Affichage du graphique
             }
         },
     });
+}
+
+function counter() {
+    if(seconds < 60) {
+        document.getElementById("counter").innerHTML = seconds + " secondes";
+    }
+    if (seconds > 0) {
+        seconds--;
+    } else {
+        clearInterval(timer);
+    }
 }

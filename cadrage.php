@@ -29,6 +29,10 @@
       </div>
     </nav>
     <br/>
+    <div class="alert alert-warning alert-dismissible fade show" id="alert" role="alert" style="display: none;">
+        Trop de requêtes effectuées, données érronées, veuillez attendre <strong id="counter">1 minute</strong> et recharger la page
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-md-12">

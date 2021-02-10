@@ -3,6 +3,8 @@ import timePerTask from "./timePerTaskP3.js";
 import requestTasks from "./coutTache.js";
 
 const token = localStorage.getItem('access_token')
+var seconds=60;
+var timer;
 
 // Requêtes
 var request = new XMLHttpRequest();
@@ -23,6 +25,23 @@ request.onload = function () {
         nbStatusTasks(tasks, size)
         requestTasks(tasks, size)
     } else {
+        document.getElementById("alert").style.display = "block";
+        if(!timer) {
+            timer = window.setInterval(function() {
+                counter();
+            }, 1000);
+        }
         console.log('error')
     }
 };
+
+function counter() {
+    if(seconds < 60) {
+        document.getElementById("counter").innerHTML = seconds + " secondes";
+    }
+    if (seconds > 0) {
+        seconds--;
+    } else {
+        clearInterval(timer);
+    }
+}
