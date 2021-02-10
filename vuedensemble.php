@@ -61,9 +61,9 @@
               <p class="sprint">Projet</p>
           </div>
       </div>
-      <div class="card" style="width: 42%;">
+      <div class="card" style="width: 60%; max-height: 200px">
         <div class="card-body">
-          <canvas id="progressTask" width="200px" height="100px"></canvas>
+          <canvas id="progressTask" width="200px" height="79px"></canvas>
         </div>
       </div>
       <div class="card">
@@ -71,7 +71,7 @@
               <h5 class="col-9">Avancement total</h5>
             </div>
             <div class="card-body" style="position: relative;">
-              <div id="progress"></div>
+              <div id="progressTotal"></div>
             </div>
       </div>
     </div>

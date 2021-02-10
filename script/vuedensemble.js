@@ -49,7 +49,7 @@ async function main() {
     });
 
     //Progress Bar
-    var progression = document.getElementById('progress');
+    var progression = document.getElementById('progressTotal');
     var bar = new ProgressBar.Circle(progression, {
         color: '#aaa',
         // This has to be the same size as the maximum width to
