@@ -9,25 +9,25 @@
                 "pcEstime" : 250
             },
             {
-                "pcEstime" : 225
+                "pcEstime" : 240
             },
             {
-                "pcEstime" : 200
+                "pcEstime" : 237
             },
             {
-                "pcEstime" : 100
+                "pcEstime" : 235
             },
             {
-                "pcEstime" : 110
-            },
-            {
-                "pcEstime" : 90
+                "pcEstime" : 150
             },
             {
                 "pcEstime" : 50
             },
             {
-                "pcEstime" : 25
+                "pcEstime" : 40
+            },
+            {
+                "pcEstime" : 20
             },
             {
                 "pcEstime" : 10
@@ -43,10 +43,10 @@
                 "pcReel" : 239
             },
             {
-                "pcReel" : 0
+                "pcReel" : 239
             },
             {
-                "pcReel" : 0
+                "pcReel" : 239
             },
             {
                 "pcReel" : 0
