@@ -7,7 +7,7 @@ var res = 0
 export default function progressTasks(tasks, size) {
     for (let i=0; i<size;i++) {
         if(tasks[i].parent == null) {
-            progress.push(tasks[i].custom_fields[2].value.percent_complete)
+            progress.push(tasks[i].custom_fields[3].value.percent_complete)
             taches.push(tasks[i].name)
         }
     }
