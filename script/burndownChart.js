@@ -40,14 +40,14 @@ export default async function burndownChart(sprint) {
         type: 'bar',
         data: {
             datasets: [{
-                label: 'Travail réel',
+                label: 'PC restant',
                 data: trvReel,
                 borderColor: 'rgba(239, 100, 0, 0.5)',
                 backgroundColor: 'rgba(255,255,255,0)',
                 borderWidth: 1,
                 type: 'line'
             }, {
-                label: 'Travail estimé',
+                label: 'PC estimé',
                 borderColor: 'rgba(239, 71, 111, 0.5)',
                 backgroundColor: 'rgba(255,255,255,0)',
                 data: trvEstime,
