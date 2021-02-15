@@ -7,6 +7,7 @@ import coutTache from "./coutTache.js"
 const token = localStorage.getItem('access_token')
 var seconds=60;
 var timer;
+var sprint = 1;
 
 // Requêtes
 var request = new XMLHttpRequest();
@@ -25,7 +26,7 @@ request.onload = function () {
         var size = tasks.length
         timePerTask(tasks, size)
         nbStatusTasks(tasks, size)
-        burndownChart()
+        burndownChart(sprint)
         progressTasks(tasks, size)
         coutTache(tasks, size)
     } else {
