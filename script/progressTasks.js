@@ -4,12 +4,19 @@ var progress = []
 var calcul = 0
 var res = 0
 
-export default function progressTasks(tasks, size) {
+export default function progressTasks(tasks, size, sprint) {
     for (let i=0; i<size;i++) {
-        if(tasks[i].parent == null) {
+      if(tasks[i].parent == null) {
+        switch(sprint) {
+          case 1 :
             progress.push(tasks[i].custom_fields[3].value.percent_complete)
-            taches.push(tasks[i].name)
-        }
+            break
+          case 2 :
+            progress.push(tasks[i].custom_fields[5].value.percent_complete)
+            break
+      }
+        taches.push(tasks[i].name)
+      }
     }
     for(let i=0; i<progress.length; i++) {
         calcul += progress[i] 

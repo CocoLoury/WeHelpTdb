@@ -20,14 +20,13 @@ request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
-        //document.getElementById("alert").style.display = "none";
         var data = JSON.parse(this.response)
         var tasks = data.tasks
         var size = tasks.length
         timePerTask(tasks, size)
         nbStatusTasks(tasks, size)
         burndownChart(sprint)
-        progressTasks(tasks, size)
+        progressTasks(tasks, size, sprint)
         coutTache(tasks, size)
     } else {
         document.getElementById("alert").style.display = "block";
