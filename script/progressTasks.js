@@ -27,14 +27,25 @@ export default function progressTasks(tasks, size, sprint) {
     var barChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            datasets: [{
-                label: 'Progression',
-                data: progress,
-                backgroundColor: 'rgba(42, 157, 143, 0.5)',
-                borderWidth: 1,
-            }],
-            labels: taches,
-            options: {},
+          datasets: [{
+              label: 'Progression',
+              data: progress,
+              backgroundColor: 'rgba(42, 157, 143, 0.5)',
+              borderWidth: 1,
+          }],
+          labels: taches,
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true,
+                  min: 0,
+                  max: 100,
+                  stepSize: 10,
+                }
+              }]
+            }
+          },
         },
     });
 
