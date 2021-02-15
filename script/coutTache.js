@@ -38,7 +38,7 @@ export default function requestTasks(tasks, size) {
     }
     setTimeout(() =>  {
         coutTache() 
-    }, 1000)
+    }, 2000)
 }
 
 function result(res, enCours) {
@@ -108,9 +108,7 @@ function coutTache() { //Affichage du graphique
     for(let i = 0; i < prix.length; i++) {
         res += prix[i];
     }
-    setTimeout(() =>  {
-        document.getElementById("prixSprint").innerHTML = res + '€';
-    }, 1000) 
+    document.getElementById("prixSprint").innerHTML = res + '€'; 
     //Charts
     var ctx = document.getElementById('coutTache').getContext('2d');
     var mixedChart = new Chart(ctx, {
