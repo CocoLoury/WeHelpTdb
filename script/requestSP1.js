@@ -14,8 +14,8 @@ var request = new XMLHttpRequest();
 
 request.open('GET', 'https://api.clickup.com/api/v2/list/42429918/task?include_closed=true&subtasks=true');
 
-request.setRequestHeader('Authorization', token); //Serveur
-//request.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); //local
+//request.setRequestHeader('Authorization', token); //Serveur
+request.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); //local
 request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
