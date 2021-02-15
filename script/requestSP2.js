@@ -27,7 +27,9 @@ request.onload = function () {
         nbStatusTasks(tasks, size)
         burndownChart(sprint)
         progressTasks(tasks, size, sprint)
-        coutTache(tasks, size)
+        setTimeout(() =>  {
+            coutTache(tasks, size) 
+        }, 60000)
     } else {
         document.getElementById("alert").style.display = "block";
         if(!timer) {
