@@ -2,9 +2,18 @@
 var trvReel = []
 var trvEstime = []
 
-export default async function burndownChart() {
+export default async function burndownChart(sprint) {
     // Donnée du fichier data.json
-    var data = await getData().then(response => response.burndownChart.sprint1)
+    var data
+    switch(sprint) {
+        case 1 :
+            data = await getData().then(response => response.burndownChart.sprint1)
+            break
+        case 2 :
+            data = await getData().then(response => response.burndownChart.sprint2)
+            break
+    }
+
     // Création du tableau de trajectoire idéal sprint
     var totalSprintEstimate = data.totalSprintEstimate;
     var totalDays = 10; 
