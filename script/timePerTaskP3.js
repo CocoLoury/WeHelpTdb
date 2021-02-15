@@ -44,6 +44,15 @@ export default function timePerTask(tasks, size) {
             }],
             labels: taches,
             options: {
+                ticks: {
+                    callback: function(tick) {
+                      var characterLimit = 20;
+                      if ( tick.length >= characterLimit) {
+                        return tick.slice(0, tick.length).substring(0, characterLimit -1).trim() + '...';;
+                      } 
+                      return tick;
+                    }
+                  }
             }
         },
     });
