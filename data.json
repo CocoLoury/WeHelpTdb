@@ -51,6 +51,18 @@
             {
                 "pcReel" : 221
             }]
+        },
+        "sprint2" :
+        {
+            "totalSprintEstimate" : 325,
+            "estimation" : [
+            {
+                "pcEstime" : 325
+            }],
+            "reel" : [
+            {
+                "pcReel" : 325
+            }]
         }
     },
     "equipe": [
@@ -136,8 +148,8 @@
             },
             {
                 "id" : 2,
-                "sprint" : 0,
-                "avancement": 0
+                "sprint" : 81.5,
+                "avancement": 1
             },
             {
                 "id" : 3,
