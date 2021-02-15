@@ -34,18 +34,18 @@ export default function progressTasks(tasks, size, sprint) {
               borderWidth: 1,
           }],
           labels: taches,
-          options: {
-            scales: {
-              yAxes: [{
-                ticks: {
-                  beginAtZero: true,
-                  min: 0,
-                  max: 100,
-                  stepSize: 10,
-                }
-              }]
-            }
-          },
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true,
+                min: 0,
+                max: 100,
+                stepSize: 10,
+              }
+            }]
+          }
         },
     });
 
