@@ -108,7 +108,9 @@ function coutTache() { //Affichage du graphique
     for(let i = 0; i < prix.length; i++) {
         res += prix[i];
     }
-    document.getElementById("prixSprint").innerHTML = res + '€'; 
+    setTimeout(() =>  {
+        document.getElementById("prixSprint").innerHTML = res + '€';
+    }, 1000) 
     //Charts
     var ctx = document.getElementById('coutTache').getContext('2d');
     var mixedChart = new Chart(ctx, {
