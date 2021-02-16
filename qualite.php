@@ -110,7 +110,7 @@
                                 MDP oublié : 
                             </div>
                             <div id="qualiteTache" class="col-4">
-                                <strong>N/A</strong>
+                                <strong>100%</strong>
                             </div>
                         </div>
                     </li>
