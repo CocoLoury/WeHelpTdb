@@ -23,6 +23,7 @@
             <a class="nav-link" href="sprint2.php">Sprint 2</a>
             <a class="nav-link" href="sprint3.php">Sprint 3</a>
             <a class="nav-link" href="sprint4.php">Sprint 4</a>
+            <a class="nav-link" href="qualite.php">Qualité</a>
             <a class="nav-link" href="equipe.php">Equipe</a>
             <a class="nav-link" href="vuedensemble.php">Vue d'ensemble</a>
           </div>
