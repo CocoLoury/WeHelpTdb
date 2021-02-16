@@ -62,3 +62,31 @@ a.nav-link.active {
 .ecart .sprint {
     font-size: small;
 }
+
+/* Qualité */
+#liste {
+    align-items: center;
+    color: rgb(194, 194, 194);
+}
+
+#qualiteNomSprint {
+    color: white;
+}
+
+ul li {
+    content: "\2022";
+    color: rgb(194, 194, 194);
+}
+
+.card-body #totalQualite {
+    vertical-align: bottom;
+    margin-top: 5%;
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    color: white;
+}
+
+ul {
+    margin-bottom: 2rem;
+}
