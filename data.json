@@ -56,6 +56,9 @@
             },
             {
                 "pcReel" : 211
+            },
+            {
+                "pcReel" : 208
             }]
         },
         "sprint2" :
@@ -149,13 +152,13 @@
         "vueSprint" : [
             {
                 "id" : 1,
-                "sprint" : 10447,
-                "avancement": 35
+                "sprint" : 11199.375,
+                "avancement": 37
             },
             {
                 "id" : 2,
-                "sprint" : 81.5,
-                "avancement": 1
+                "sprint" : 190.5,
+                "avancement": 4
             },
             {
                 "id" : 3,
