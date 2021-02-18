@@ -27,7 +27,7 @@ export default function requestTasks(tasks, size) {
                 if(!timer) {
                     timer = window.setInterval(function() {
                         counter();
-                    }, 1000);
+                    }, 2000);
                 }
             }
             var res = JSON.parse(this.response)
