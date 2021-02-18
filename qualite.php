@@ -40,7 +40,7 @@
                                 Créer la map : 
                             </div>
                             <div id="qualiteTache" class="col-4">
-                                <strong>N/A</strong>
+                                <strong>0%</strong>
                             </div>
                         </div>
                     </li>
@@ -70,7 +70,7 @@
                                 Barre de navigation : 
                             </div>
                             <div id="qualiteTache" class="col-4">
-                                <strong>N/A</strong>
+                                <strong>0%</strong>
                             </div>
                         </div>
                     </li>
