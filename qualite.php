@@ -130,7 +130,7 @@
                         Total sprint 1 : 
                     </div>
                     <div id="qualiteTache" class="col-4">
-                        <strong>100%</strong>
+                        <strong>78%</strong>
                     </div>
                 </div>
             </div>
