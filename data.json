@@ -66,14 +66,14 @@
         },
         "sprint2" :
         {
-            "totalSprintEstimate" : 325,
+            "totalSprintEstimate" : 337,
             "estimation" : [
             {
-                "pcEstime" : 325
+                "pcEstime" : 337
             }],
             "reel" : [
             {
-                "pcReel" : 325
+                "pcReel" : 337
             }]
         }
     },
