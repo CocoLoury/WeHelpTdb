@@ -90,7 +90,7 @@
                                 Connexion admin : 
                             </div>
                             <div id="qualiteTache" class="col-4">
-                                <strong>N/A</strong>
+                                <strong>100%</strong>
                             </div>
                         </div>
                     </li>
@@ -100,7 +100,7 @@
                                 Afficher les SZ : 
                             </div>
                             <div id="qualiteTache" class="col-4">
-                                <strong>N/A</strong>
+                                <strong>100%</strong>
                             </div>
                         </div>
                     </li>
@@ -120,7 +120,7 @@
                                 Voir les infos de la SafeZone au clic : 
                             </div>
                             <div id="qualiteTache" class="col-4">
-                                <strong>N/A</strong>
+                                <strong>100%</strong>
                             </div>
                         </div>
                     </li>
