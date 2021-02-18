@@ -3,10 +3,10 @@
     {
         "sprint1" :
         {
-            "totalSprintEstimate" : 250,
+            "totalSprintEstimate" : 254,
             "estimation" : [
             {
-                "pcEstime" : 250
+                "pcEstime" : 254
             },
             {
                 "pcEstime" : 240
