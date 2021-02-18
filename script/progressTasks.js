@@ -62,8 +62,8 @@ export default function progressTasks(tasks, size, sprint) {
     text: {
       autoStyleContainer: false
     },
-    from: { color: '#EE771B', width: 6 },
-    to: { color: '#333', width: 6 },
+    from: { color: '#EE771B', width: 7 },
+    to: { color: 'rgba(11, 156, 49, 0.5)', width: 7 },
     // Set default step function for all animate calls
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
