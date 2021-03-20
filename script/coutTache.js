@@ -2,6 +2,18 @@
 var prix = []
 var taches = []
 var idParent = []
+var tempsColinL = 0;
+var tempsArmand = 0;
+var tempsQuentin = 0;
+var tempsColinC = 0;
+var tempsJulien = 0;
+var tempsMyriam = 0;
+var tempsKhadidja = 0;
+var tempsSouhail = 0;
+var tempsAlexF = 0;
+var tempsAlexC = 0;
+var tempsAntoine = 0;
+var tempsSteven = 0;
 var seconds=60;
 var timer;
 const token = localStorage.getItem('access_token')
@@ -37,7 +49,19 @@ export default function requestTasks(tasks, size) {
         requestTime.send()
     }
     setTimeout(() =>  {
-        coutTache() 
+        coutTache()
+        document.getElementById("tempsAlexF").innerHTML = Math.round(tempsAlexF*100)/100 + "h";
+        document.getElementById("tempsArmand").innerHTML = Math.round(tempsArmand*100)/100 + "h";
+        document.getElementById("tempsQuentin").innerHTML = Math.round(tempsQuentin*100)/100 + "h";
+        document.getElementById("tempsColinC").innerHTML = Math.round(tempsColinC*100)/100 + "h";
+        document.getElementById("tempsSouhail").innerHTML = Math.round(tempsSouhail*100)/100 + "h";
+        document.getElementById("tempsJulien").innerHTML = Math.round(tempsJulien*100)/100 + "h";
+        document.getElementById("tempsSteven").innerHTML = Math.round(tempsSteven*100)/100 + "h";
+        document.getElementById("tempsColinL").innerHTML = Math.round(tempsColinL*100)/100 + "h";
+        document.getElementById("tempsAlexC").innerHTML = Math.round(tempsAlexC*100)/100 + "h";
+        document.getElementById("tempsMyriam").innerHTML = Math.round(tempsMyriam*100)/100 + "h";
+        document.getElementById("tempsAntoine").innerHTML = Math.round(tempsAntoine*100)/100 + "h";
+        document.getElementById("tempsKhadidja").innerHTML = Math.round(tempsKhadidja*100)/100 + "h";
     }, 2000)
 }
 
@@ -48,39 +72,64 @@ function result(res, enCours) {
         switch(res.data[i].user.id) {
             case 6833952 :
                 price += 37.50 * time
+                tempsAlexF += time
+                console.log(enCours)
+                document.getElementById("tasksAlexF").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 4594745 :
                 price += 62.50 * time
+                tempsArmand += time
+                document.getElementById("tasksArmand").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 6615132 :
                 price += 50 * time
+                tempsQuentin += time
+                document.getElementById("tasksQuentin").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 4594746 :
                 price += 37.50 * time
+                tempsColinC += time
+                document.getElementById("tasksColinC").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 6615133 :
                 price += 50 * time
+                tempsSouhail += time
+                document.getElementById("tasksSouhail").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 6833951 :
                 price += 37.50 * time
+                tempsJulien += time
+                document.getElementById("tasksJulien").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 4596253 :
                 price += 37.50 * time
+                tempsSteven += time
+                document.getElementById("tasksSteven").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 4594734 :
                 price += 50 * time
+                tempsColinL += time
+                document.getElementById("tasksColinL").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 2679874 :
                 price += 37.50 * time
+                tempsAlexC += time
+                document.getElementById("tasksAlexC").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 6833946 :
                 price += 37.50 * time
+                tempsMyriam += time
+                document.getElementById("tasksMyriam").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 6833949 :
                 price += 50 * time
+                tempsAntoine += time
+                document.getElementById("tasksAntoine").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             case 6833945 :
                 price += 50 * time
+                tempsKhadidja += time
+                document.getElementById("tasksKhadidja").innerHTML += "<li>"+enCours.name+" : "+time+"h"+"</li>";
                 break
             default: 
                 price += 0

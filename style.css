@@ -96,3 +96,9 @@ ul {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+hr {
+    margin: 10px;
+    height: 3px;
+    color: white;
+}
