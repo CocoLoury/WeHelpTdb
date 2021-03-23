@@ -101,40 +101,40 @@
     </div>
     <hr/>
     <div class="container-fluid">
-      <p>Temps total d'Alexandre F : <b id="tempsAlexF">0</b></p>
+      <p>Temps total / coûts d'Alexandre F : <b id="tempsAlexF">0</b></p>
       <p>Tâches d'Alexandre F : <ul id="tasksAlexF"></ul>
       <hr />
-      <p>Temps total d'Armand : <b id="tempsArmand">0</b></p>
+      <p>Temps total / coûts d'Armand : <b id="tempsArmand">0</b></p>
       <p>Tâches d'Armand : <ul id="tasksArmand"></ul>
       <hr />
-      <p>Temps total de Quentin : <b id="tempsQuentin">0</b></p>
+      <p>Temps total / coûts de Quentin : <b id="tempsQuentin">0</b></p>
       <p>Tâches de Quentin : <ul id="tasksQuentin"></ul>
       <hr />
-      <p>Temps total de Colin C : <b id="tempsColinC">0</b></p>
+      <p>Temps total / coûts de Colin C : <b id="tempsColinC">0</b></p>
       <p>Tâches de Colin C : <ul id="tasksColinC"></ul>
       <hr />
-      <p>Temps total de Souhail : <b id="tempsSouhail">0</b></p>
+      <p>Temps total / coûts de Souhail : <b id="tempsSouhail">0</b></p>
       <p>Tâches de Souhail : <ul id="tasksSouhail"></ul>
       <hr />
-      <p>Temps total de Julien : <b id="tempsJulien">0</b></p>
+      <p>Temps total / coûts de Julien : <b id="tempsJulien">0</b></p>
       <p>Tâches de Julien : <ul id="tasksJulien"></ul>
       <hr />
-      <p>Temps total de Steven : <b id="tempsSteven">0</b></p>
+      <p>Temps total / coûts de Steven : <b id="tempsSteven">0</b></p>
       <p>Tâches de Steven : <ul id="tasksSteven"></ul>
       <hr />
-      <p>Temps total de Colin L : <b id="tempsColinL">0</b></p>
+      <p>Temps total / coûts de Colin L : <b id="tempsColinL">0</b></p>
       <p>Tâches de Colin L : <ul id="tasksColinL"></ul>
       <hr />
-      <p>Temps total d'Alexandre C : <b id="tempsAlexC">0</b></p>
+      <p>Temps total / coûts d'Alexandre C : <b id="tempsAlexC">0</b></p>
       <p>Tâches d'Alexandre C : <ul id="tasksAlexC"></ul>
       <hr />
-      <p>Temps total de Myriam : <b id="tempsMyriam">0</b></p>
+      <p>Temps total / coûts de Myriam : <b id="tempsMyriam">0</b></p>
       <p>Tâches de Myriam : <ul id="tasksMyriam"></ul>
       <hr />
-      <p>Temps total d'Antoine : <b id="tempsAntoine">0</b></p>
+      <p>Temps total / coûts d'Antoine : <b id="tempsAntoine">0</b></p>
       <p>Tâches d'Antoine : <ul id="tasksAntoine"></ul>
       <hr />
-      <p>Temps total de Khadidja : <b id="tempsKhadidja">0</b></p>
+      <p>Temps total / coûts de Khadidja : <b id="tempsKhadidja">0</b></p>
       <p>Tâches de Khadidja : <ul id="tasksKhadidja"></ul>
     </div>
   </body>
