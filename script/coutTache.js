@@ -34,7 +34,7 @@ var seconds=60;
 var timer;
 const token = localStorage.getItem('access_token')
 
-export default function requestTasks(tasks, size) {
+export default async function requestTasks(tasks, size) {
     var enCours
     for(let i = 0; i < size; i++) {
         if(tasks[i].parent === null) {
@@ -43,7 +43,11 @@ export default function requestTasks(tasks, size) {
             prix.push(0)
         }
     }
+
     for(let i = 0; i < size; i++) {
+        if(i === 90) {
+            await sleep(60000)
+        }
         var requestTime = new XMLHttpRequest();
         requestTime.open('GET', 'https://api.clickup.com/api/v2/task/'+tasks[i].id+'/time/?custom_task_ids=&team_id=2644132');
         requestTime.setRequestHeader('Authorization', token); // Serveur
@@ -78,7 +82,7 @@ export default function requestTasks(tasks, size) {
         document.getElementById("tempsMyriam").innerHTML = Math.round(tempsMyriam*100)/100 + "h / " + prixMyriam + "€";
         document.getElementById("tempsAntoine").innerHTML = Math.round(tempsAntoine*100)/100 + "h / " + prixAntoine + "€";
         document.getElementById("tempsKhadidja").innerHTML = Math.round(tempsKhadidja*100)/100 + "h / " + prixKhadidja + "€";
-    }, 2000)
+    }, 4000)
 }
 
 function result(res, enCours) {
@@ -225,4 +229,8 @@ function counter() {
     } else {
         clearInterval(timer);
     }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
