@@ -15,8 +15,8 @@ var request = new XMLHttpRequest();
 request.open('GET', 'https://api.clickup.com/api/v2/list/42461988/task?include_closed=true&subtasks=true');
 
 request.setRequestHeader('Authorization', token); //Serveur
-//request.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); //local
-request.setRequestHeader('Content-Type', 'application/json');
+request.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); //local
+//request.setRequestHeader('Content-Type', 'application/json');
 
 request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
@@ -27,7 +27,7 @@ request.onload = function () {
         if (size >= 100) {
             var request2 = new XMLHttpRequest();
             request2.open('GET', 'https://api.clickup.com/api/v2/list/42461988/task?include_closed=true&subtasks=true&reverse=true');
-            request.setRequestHeader('Authorization', token); //Serveur
+            request2.setRequestHeader('Authorization', token); //Serveur
             //request2.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); //local
             request2.setRequestHeader('Content-Type', 'application/json');
             request2.onload = function () {
