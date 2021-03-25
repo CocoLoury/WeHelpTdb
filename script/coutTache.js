@@ -50,8 +50,8 @@ export default async function requestTasks(tasks, size) {
         }
         var requestTime = new XMLHttpRequest();
         requestTime.open('GET', 'https://api.clickup.com/api/v2/task/'+tasks[i].id+'/time/?custom_task_ids=&team_id=2644132');
-        requestTime.setRequestHeader('Authorization', token); // Serveur
-        //requestTime.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); // Local
+        //requestTime.setRequestHeader('Authorization', token); // Serveur
+        requestTime.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); // Local
         requestTime.setRequestHeader('Content-Type', 'application/json');
         requestTime.onload = function() {
             if (requestTime.status == 429) {
