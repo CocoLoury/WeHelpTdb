@@ -12,6 +12,9 @@ export default async function burndownChart(sprint) {
         case 2 :
             data = await getData().then(response => response.burndownChart.sprint2)
             break
+        case 3 : 
+            data = await getData().then(response => response.burndownChart.sprint3)
+            break
     }
 
     // Création du tableau de trajectoire idéal sprint
