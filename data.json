@@ -72,10 +72,13 @@
                 "pcEstime" : 402
             },
             {
-                "pcEstime" : 390
+                "pcEstime" : 350
             },
             {
-                "pcEstime" : 360
+                "pcEstime" : 250
+            },
+            {
+               "pcEstime" : 250 
             }],
             "reel" : [
             {
@@ -86,6 +89,21 @@
             },
             {
                 "pcReel" : 323
+            },
+            {
+                "pcReel" : 323
+            }]
+        },
+        "sprint3" :
+        {
+            "totalSprintEstimate" : 402,
+            "estimation" : [
+            {
+                "pcEstime" : 402
+            }],
+            "reel" : [
+            {
+                "pcReel" : 402
             }]
         }
     },
@@ -167,17 +185,17 @@
         "vueSprint" : [
             {
                 "id" : 1,
-                "sprint" : 13361.875,
-                "avancement": 76
+                "sprint" : 15920.75,
+                "avancement": 90
             },
             {
                 "id" : 2,
-                "sprint" : 190.5,
-                "avancement": 4
+                "sprint" : 9449.375,
+                "avancement": 17
             },
             {
                 "id" : 3,
-                "sprint" : 0,
+                "sprint" : 471.5,
                 "avancement": 0
             },
             {

@@ -14,6 +14,8 @@ export default function progressTasks(tasks, size, sprint) {
           case 2 :
             progress.push(tasks[i].custom_fields[5].value.percent_complete)
             break
+          case 3 :
+            progress.push(tasks[i].custom_fields[5].value.percent_complete)
       }
         taches.push(tasks[i].name)
       }
