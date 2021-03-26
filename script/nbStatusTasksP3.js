@@ -6,8 +6,6 @@ var c = 0;
 var d = 0;
 var e = 0;
 var f = 0;
-var g = 0;
-var h = 0;
 var res = []
 
 export default function nbStatusTasks(tasks, size) {
@@ -20,26 +18,32 @@ export default function nbStatusTasks(tasks, size) {
         if(stat[j] == "done") {
             a += 1
         }
-        if(stat[j] == "retour test") {
+        if(stat[j] == "retour test develop") {
             b += 1
         }
-        if(stat[j] == "test") {
+        if(stat[j] == "retour test master") {
+            b += 1
+        }
+        if(stat[j] == "test develop") {
+            b += 1
+        }
+        if(stat[j] == "test master") {
+            b += 1
+        }
+        if(stat[j] == "intégration develop") {
             c += 1
         }
-        if(stat[j] == "intégration") {
-            d += 1
+        if(stat[j] == "intégration master") {
+            c += 1
         }
         if(stat[j] == "contrôle qualité") {
-            e += 1
+            d += 1
         }
         if(stat[j] == "in progress") {
-            f += 1
-        }
-        if(stat[j] == "gestion de projet") {
-            g += 1
+            e += 1
         }
         if(stat[j] == "to do") {
-            h += 1
+            f += 1
         }
     }
     res.push(a)
@@ -48,8 +52,6 @@ export default function nbStatusTasks(tasks, size) {
     res.push(d)
     res.push(e)
     res.push(f)
-    res.push(g)
-    res.push(h)
     // Charts
     var ctx = document.getElementById('nbStatusTasks').getContext('2d');
     var myPieChart = new Chart(ctx, {
@@ -57,24 +59,20 @@ export default function nbStatusTasks(tasks, size) {
         data: {
             labels: [
                 "Done",
-                "Retour test",
                 "Test",
                 "Intégration",
                 "Contrôle qualité",
                 "In progress",
-                "Gestion de projet",
                 "To Do"
             ],
             datasets: [{
                 data: res,
                 backgroundColor: [
                     "#06D6A0",
-                    "#6a040f",
                     "#e85d04",
                     "#ff477e",
                     "#25a18e",
                     "#044180",
-                    "#ffff3f",
                     "#adb5bd"
                     
                 ],
