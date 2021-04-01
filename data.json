@@ -88,6 +88,9 @@
             },
             {
                 "pcEstime" : 25
+            },
+            {
+                "pcEstime" : 10
             }],
             "reel" : [
             {
@@ -101,6 +104,9 @@
             },
             {
                 "pcReel" : 323
+            },
+            {
+                "pcReel" : 314
             },
             {
                 "pcReel" : 314
