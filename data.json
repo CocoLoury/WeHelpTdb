@@ -91,6 +91,9 @@
             },
             {
                 "pcEstime" : 10
+            },
+            {
+                "pcEstime" : 0
             }],
             "reel" : [
             {
@@ -116,6 +119,9 @@
             },
             {
                 "pcReel" : 314
+            },
+            {
+                "pcReel" : 228
             }]
         },
         "sprint3" :
@@ -210,16 +216,16 @@
             {
                 "id" : 1,
                 "sprint" : 15920.75,
-                "avancement": 90
+                "avancement": 100
             },
             {
                 "id" : 2,
-                "sprint" : 9449.375,
-                "avancement": 17
+                "sprint" : 17837.75,
+                "avancement": 52
             },
             {
                 "id" : 3,
-                "sprint" : 471.5,
+                "sprint" : 810.5,
                 "avancement": 0
             },
             {
