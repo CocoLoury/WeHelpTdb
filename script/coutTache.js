@@ -30,6 +30,8 @@ var prixAlexC = 0;
 var prixAntoine = 0;
 var prixSteven = 0;
 
+var tempsEntier = 0;
+
 var seconds=60;
 var timer;
 const token = localStorage.getItem('access_token')
@@ -50,8 +52,8 @@ export default async function requestTasks(tasks, size) {
         }
         var requestTime = new XMLHttpRequest();
         requestTime.open('GET', 'https://api.clickup.com/api/v2/task/'+tasks[i].id+'/time/?custom_task_ids=&team_id=2644132');
-        //requestTime.setRequestHeader('Authorization', token); // Serveur
-        requestTime.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); // Local
+        requestTime.setRequestHeader('Authorization', token); // Serveur
+        //requestTime.setRequestHeader('Authorization', 'pk_4594734_LQY0P1Q8YAZUBTOOI9XN7ALJ0LHP4C2R'); // Local
         requestTime.setRequestHeader('Content-Type', 'application/json');
         requestTime.onload = function() {
             if (requestTime.status == 429) {
@@ -59,7 +61,7 @@ export default async function requestTasks(tasks, size) {
                 if(!timer) {
                     timer = window.setInterval(function() {
                         counter();
-                    }, 2000);
+                    }, 3000);
                 }
             }
             var res = JSON.parse(this.response)
@@ -82,6 +84,7 @@ export default async function requestTasks(tasks, size) {
         document.getElementById("tempsMyriam").innerHTML = Math.round(tempsMyriam*100)/100 + "h / " + prixMyriam + "€";
         document.getElementById("tempsAntoine").innerHTML = Math.round(tempsAntoine*100)/100 + "h / " + prixAntoine + "€";
         document.getElementById("tempsKhadidja").innerHTML = Math.round(tempsKhadidja*100)/100 + "h / " + prixKhadidja + "€";
+        console.log(tempsEntier);
     }, 4000)
 }
 
@@ -94,6 +97,7 @@ function result(res, enCours) {
             case 6833952 :
                 price += 37.50 * time
                 priceTemp += 37.50 * time
+                tempsEntier += time
                 tempsAlexF += time
                 prixAlexF += priceTemp
                 document.getElementById("tasksAlexF").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -101,6 +105,7 @@ function result(res, enCours) {
             case 4594745 :
                 price += 62.50 * time
                 priceTemp += 62.50 * time
+                tempsEntier += time
                 tempsArmand += time
                 prixArmand += priceTemp
                 document.getElementById("tasksArmand").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -108,6 +113,7 @@ function result(res, enCours) {
             case 6615132 :
                 price += 50 * time
                 priceTemp += 50 * time
+                tempsEntier += time
                 tempsQuentin += time
                 prixQuentin += priceTemp
                 document.getElementById("tasksQuentin").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -115,6 +121,7 @@ function result(res, enCours) {
             case 4594746 :
                 price += 37.50 * time
                 priceTemp += 37.50 * time
+                tempsEntier += time
                 tempsColinC += time
                 prixColinC += priceTemp
                 document.getElementById("tasksColinC").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -122,6 +129,7 @@ function result(res, enCours) {
             case 6615133 :
                 price += 50 * time
                 priceTemp += 50 * time
+                tempsEntier += time
                 tempsSouhail += time
                 prixSouhail += priceTemp
                 document.getElementById("tasksSouhail").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -129,6 +137,7 @@ function result(res, enCours) {
             case 6833951 :
                 price += 37.50 * time
                 priceTemp += 37.50 * time
+                tempsEntier += time
                 tempsJulien += time
                 prixJulien += priceTemp
                 document.getElementById("tasksJulien").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -136,6 +145,7 @@ function result(res, enCours) {
             case 4596253 :
                 price += 37.50 * time
                 priceTemp += 37.50 * time
+                tempsEntier += time
                 tempsSteven += time
                 prixSteven += priceTemp
                 document.getElementById("tasksSteven").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -143,6 +153,7 @@ function result(res, enCours) {
             case 4594734 :
                 price += 50 * time
                 priceTemp += 50 * time
+                tempsEntier += time
                 tempsColinL += time
                 prixColinL += priceTemp
                 document.getElementById("tasksColinL").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -150,6 +161,7 @@ function result(res, enCours) {
             case 2679874 :
                 price += 37.50 * time
                 priceTemp += 37.50 * time
+                tempsEntier += time
                 tempsAlexC += time
                 prixAlexC += priceTemp
                 document.getElementById("tasksAlexC").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -157,6 +169,7 @@ function result(res, enCours) {
             case 6833946 :
                 price += 37.50 * time
                 priceTemp += 37.50 * time
+                tempsEntier += time
                 tempsMyriam += time
                 prixMyriam += priceTemp
                 document.getElementById("tasksMyriam").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -164,6 +177,7 @@ function result(res, enCours) {
             case 6833949 :
                 price += 50 * time
                 priceTemp += 50 * time
+                tempsEntier += time
                 tempsAntoine += time
                 prixAntoine += priceTemp
                 document.getElementById("tasksAntoine").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";
@@ -171,6 +185,7 @@ function result(res, enCours) {
             case 6833945 :
                 price += 50 * time
                 priceTemp += 50 * time
+                tempsEntier += time
                 tempsKhadidja += time
                 prixKhadidja += priceTemp
                 document.getElementById("tasksKhadidja").innerHTML += "<li>"+enCours.name+" : "+time+"h / "+ priceTemp + "€" + "</li>";

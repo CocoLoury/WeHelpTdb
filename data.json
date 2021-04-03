@@ -121,7 +121,7 @@
                 "pcReel" : 314
             },
             {
-                "pcReel" : 228
+                "pcReel" : 174
             }]
         },
         "sprint3" :
@@ -220,8 +220,8 @@
             },
             {
                 "id" : 2,
-                "sprint" : 17837.75,
-                "avancement": 52
+                "sprint" : 18748.375,
+                "avancement": 60
             },
             {
                 "id" : 3,
