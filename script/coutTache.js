@@ -61,7 +61,7 @@ export default async function requestTasks(tasks, size) {
                 if(!timer) {
                     timer = window.setInterval(function() {
                         counter();
-                    }, 3000);
+                    }, 1000);
                 }
             }
             var res = JSON.parse(this.response)
