@@ -126,14 +126,14 @@
         },
         "sprint3" :
         {
-            "totalSprintEstimate" : 252,
+            "totalSprintEstimate" : 250,
             "estimation" : [
             {
-                "pcEstime" : 252
+                "pcEstime" : 250
             }],
             "reel" : [
             {
-                "pcReel" : 252
+                "pcReel" : 250
             }]
         }
     },
