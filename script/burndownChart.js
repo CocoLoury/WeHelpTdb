@@ -19,7 +19,7 @@ export default async function burndownChart(sprint) {
 
     // Création du tableau de trajectoire idéal sprint
     var totalSprintEstimate = data.totalSprintEstimate;
-    var totalDays = 10; 
+    var totalDays = 5; 
     var idealIncrement = totalSprintEstimate / totalDays;
     var ideal = [];
     for (let i = 0; i <= totalDays-1; i++) {
@@ -63,7 +63,7 @@ export default async function burndownChart(sprint) {
                 lineTension: 0,
                 type: 'line',
             }],
-            labels: ['Jour 1','Jour 2','Jour 3','Jour 4','Jour 5','Jour 6','Jour 7','Jour 8','Jour 9','Jour 10',],
+            labels: ['Jour 1','Jour 2','Jour 3','Jour 4','Jour 5'],
             options: {
                 scales: {
                     yAxes: [{
