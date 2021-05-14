@@ -130,10 +130,22 @@
             "estimation" : [
             {
                 "pcEstime" : 250
+            },
+            {
+                "pcEstime" : 167
+            },
+            {
+                "pcEstime" : 98
+            },
+            {
+                "pcEstime" : 0
+            },
+            {
+                "pcEstime" : 0
             }],
             "reel" : [
             {
-                "pcReel" : 250
+                "pcReel" : 211
             }]
         }
     },
