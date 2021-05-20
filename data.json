@@ -152,7 +152,13 @@
             },
             {
                 "pcReel" : 209
-            }]
+            },
+            {
+                "pcReel" : 209
+            },
+            {
+                "pcReel" : 0
+            },]
         }
     },
     "equipe": [
@@ -243,8 +249,8 @@
             },
             {
                 "id" : 3,
-                "sprint" : 0,
-                "avancement": 0
+                "sprint" : 20865,
+                "avancement": 100
             },
             {
                 "id" : 4,
