@@ -15,9 +15,12 @@ export default async function burndownChart(sprint) {
         case 3 : 
             data = await getData().then(response => response.burndownChart.sprint3)
             break
+        case 4 : 
+            data = await getData().then(response => response.burndownChart.sprint4)    
+            break
     }
 
-    // Création du tableau de trajectoire idéal sprint
+    // Créatio du tableau de trajectoire idéal sprint
     var totalSprintEstimate = data.totalSprintEstimate;
     var totalDays = 5; 
     var idealIncrement = totalSprintEstimate / totalDays;
